@@ -10,7 +10,7 @@
         <li class="nav-item">
           <a class="nav-link
           {% if request.resolver_match.view_name == 'blog:index' %}
-          active
+            active
           {% endif %}" href="{% url 'blog:index' %}">
             Лента записей
           </a>
@@ -18,7 +18,7 @@
         <li class="nav-item">              
           <a class="nav-link
           {% if request.resolver_match.view_name == 'pages:about' %}
-          active
+            active
           {% endif %}" href="{% url 'pages:about' %}">
             О проекте
           </a>
@@ -26,7 +26,7 @@
         <li class="nav-item">
           <a class="nav-link
           {% if request.resolver_match.view_name == 'pages:rules' %}
-          active
+            active
           {% endif %}" href="{% url 'pages:rules' %}">
             Наши правила
           </a>
